@@ -74,6 +74,7 @@ footer {
   padding: 0; }
 
 body {
+  font-family: 'Roboto', sans-serif;
   background-image: url(../assets/nba-bg.jpg); }
 
 main h1 {
