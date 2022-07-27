@@ -1,0 +1,96 @@
+.ancla__logo {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 25px; }
+  .ancla__logo img {
+    width: 200px;
+    height: 80px; }
+
+.nav {
+  width: 100%;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #af0505 50%, #020024 100%);
+  height: 90px;
+  color: #fff;
+  margin-bottom: 40px; }
+  .nav .nav__logo {
+    font-size: 1.5em;
+    font-weight: 900;
+    box-shadow: rgba(30, 7, 134, 0.4) -5px 5px, rgba(253, 1, 1, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; }
+  .nav .nav__menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em; }
+  .nav .nav__item {
+    color: #fff;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
+    .nav .nav__item::after {
+      content: "";
+      display: block;
+      background-color: #fff;
+      width: 90%;
+      margin-top: 3px;
+      height: 3px;
+      clip-path: var(--clippy);
+      transition: clip-path .5s; }
+    .nav .nav__item:hover {
+      --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+
+.nav__container {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center; }
+
+.nav__label, .nav__input {
+  display: none; }
+
+.nav__label-logo {
+  margin-top: 5em; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url(../assets/nba-bg.jpg); }
+
+main h1 {
+  text-align: center;
+  margin: auto;
+  color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; }
+
+main h2 {
+  font-size: 2.5em;
+  color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; }
+
+article .text-portland {
+  color: #861c1c;
+  font-size: 2em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; }
+
+article .text-orlando {
+  color: darkblue;
+  font-size: 2em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; }
+
+article .text-memphis {
+  color: blue;
+  font-size: 2em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; }
+
+article .text-pistons {
+  color: brown;
+  font-size: 2em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; }
+
+article .text__index {
+  text-align: start;
+  color: aliceblue;
+  font-size: 1.5em;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; }
