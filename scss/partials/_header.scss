@@ -1,24 +1,27 @@
+@import "../utilities/variables";
+
+
 .ancla__logo{
     text-decoration: none;
     color: antiquewhite;
     font-size: 25px;
-    img{
+    & img{
         width: 200px;
         height: 80px;
     }
 }
-
 .nav{
     width: 100%;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(175,5,5,1) 50%, rgba(2,0,36,1) 100%);
+    background: $bg__color;
     height: 90px;
     color: #fff;
     margin-bottom: 40px;
-    .nav__logo{
-        font-size: 1.5em;
-        font-weight: 900;
-        box-shadow: rgba(30, 7, 134, 0.4) -5px 5px, rgba(253, 1, 1, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    & a{
+        img{
+            width: 200px;
+            height: 80px;
+        }
     }
     .nav__menu{
         display: grid;

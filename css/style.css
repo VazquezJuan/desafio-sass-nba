@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
 .ancla__logo {
   text-decoration: none;
   color: antiquewhite;
@@ -13,10 +14,9 @@
   height: 90px;
   color: #fff;
   margin-bottom: 40px; }
-  .nav .nav__logo {
-    font-size: 1.5em;
-    font-weight: 900;
-    box-shadow: rgba(30, 7, 134, 0.4) -5px 5px, rgba(253, 1, 1, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; }
+  .nav a img {
+    width: 200px;
+    height: 80px; }
   .nav .nav__menu {
     display: grid;
     grid-auto-flow: column;
@@ -135,10 +135,10 @@ form {
   border-radius: 30px 40px 40px 0px; }
 
 @media (max-width: 755px) {
-  .nav__label {
+  nav .nav__label {
     display: block;
     cursor: pointer; }
-  .nav__menu {
+  nav .nav__menu {
     position: fixed;
     top: 80px;
     bottom: 0;
@@ -152,19 +152,19 @@ form {
     align-items: center;
     clip-path: circle(0 at center);
     transition: clip-path 1s ease-in-out; }
-  .nav__input:checked + .nav__menu {
+  nav .nav__input:checked + .nav__menu {
     clip-path: circle(100% at center); }
-  .main__container {
+  nav .main__container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 250px;
     gap: 4em; }
-  .main__card-img {
+  nav .main__card-img {
     width: 300px;
     height: 150px; }
-  .main__card-text {
+  nav .main__card-text {
     font-size: 12px; }
-  h2 {
+  nav h2 {
     font-size: 1.5em; } }
 
 @media (max-width: 1440px) {
