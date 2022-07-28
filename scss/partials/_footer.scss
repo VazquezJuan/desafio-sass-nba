@@ -1,23 +1,27 @@
 @import "../utilities/variables";
-footer{
+.footer{
     width: 100%;
     background: rgb(2,0,36);
     background: $bg__color;
-    height: 80px;
+    height: 100px;
     color: #fff;
-    .footer__container{
+    &__container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 5px 25px;
+        margin: 15px 25px;
+        line-height: 100px;
     }
     a{
-        color: #fff;
+        i{
+        color: rgb(255, 255, 255);
         font-size: 2em;
-        line-height: 60px;
+        box-shadow: rgba(255, 254, 254, 0.25) 0px 25px 50px -12px;
         margin: 5px 20px;
-    }
+        }
+    }        
 }
+
 
 

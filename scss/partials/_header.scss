@@ -1,70 +1,179 @@
 @import "../utilities/variables";
 
 
-.ancla__logo{
-    text-decoration: none;
-    color: antiquewhite;
-    font-size: 25px;
-    & img{
-        width: 200px;
-        height: 80px;
-    }
-}
+// .nav{
+//     width: 100%;
+//     background: rgb(2,0,36);
+//     background: $bg__color;
+//     height: 90px;
+//     color: #fff;
+//     margin-bottom: 40px;
+//     & a{
+//         img{
+//             width: 200px;
+//             height: 80px;
+//         }
+//     }
+//     .nav__menu{
+//         display: grid;
+//         grid-auto-flow: column;
+//         gap: 3em;
+//     }
+//     .nav__item{
+//         color: #fff;
+//         text-decoration: none;
+//         --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+//         &::after{
+//         content: "";
+//         display: block;
+//         background-color: #fff;
+//         width: 90%;
+//         margin-top: 3px;
+//         height: 3px;
+//         clip-path: var(--clippy);
+//         transition: clip-path .5s;
+//         }
+//         &:hover{
+//             --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+//         }
+//     }
+// }
+
+// .nav__container{
+//     display: flex;
+//     height: 100%;
+//     width: 90%;
+//     margin: 0 auto;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .nav__label, .nav__input{
+//     display: none;
+// }
+
+// .nav__label-logo{
+//     margin-top: 5em;
+// }
+
+// media queries para menu hamburguesa
+
+
+
+// .nav{
+//     width: 100%;
+//     background: rgb(2,0,36);
+//     background: $bg__color;
+//     height: 90px;
+//     color: #fff;
+//     margin-bottom: 40px;
+//     a{
+//         img{
+//             width: 200px;
+//             height: 80px;
+//         }
+//     }
+//     &__container{
+//         display: flex;
+//         height: 100%;
+//         width: 90%;
+//         margin: 0 auto;
+//         justify-content: space-between;
+//         align-items: center;  
+//         }
+//         &__label{
+//         display: none;
+//         }
+//         &__logo{
+//             margin-top: 5em;
+//         }
+
+//         &__input{
+//         display: none;
+//         }
+
+//         &__menu{
+//             display: grid;
+//             grid-auto-flow: column;
+//             gap: 3em;
+//             &__item{
+//                 color: #fff;
+//                 text-decoration: none;
+//                 --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+//                 &::after{
+//                     content: "";
+//                     display: block;
+//                     background-color: #fff;
+//                     width: 90%;
+//                     margin-top: 3px;
+//                     height: 3px;
+//                     clip-path: var(--clippy);
+//                     transition: clip-path .5s;
+//                     &:hover{
+//                         --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+//                     }
+//                     }          
+//                 }
+//             }
+// }
+
 .nav{
     width: 100%;
-    background: rgb(2,0,36);
-    background: $bg__color;
+    // background: $bg__color;
+    background-image: url(../assets/nba-background.jpg);
+    background-position-y:35%;
     height: 90px;
     color: #fff;
     margin-bottom: 40px;
-    & a{
+    a{
         img{
             width: 200px;
             height: 80px;
         }
     }
-    .nav__menu{
+    &__container{
+        width: 100%;
+        display: flex;
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;  
+    }
+    &__menu{
         display: grid;
         grid-auto-flow: column;
         gap: 3em;
-    }
-    .nav__item{
-        color: #fff;
-        text-decoration: none;
-        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-        &::after{
-        content: "";
-        display: block;
-        background-color: #fff;
-        width: 90%;
-        margin-top: 3px;
-        height: 3px;
-        clip-path: var(--clippy);
-        transition: clip-path .5s;
+        &__item{
+            color: #fff;
+            text-decoration: none;
+            --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+            &::after{
+                content: "";
+                display: block;
+                background-color: rgb(250, 168, 168);
+                width: 90%;
+                margin-top: 3px;
+                height: 3px;
+                clip-path: var(--clippy);
+                transition: clip-path .5s;
+            }
+            &:hover{
+                color: #fff;
+                --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
         }
-        &:hover{
-            --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    &__label{
+        display: none;
+        img{
+            margin-top: 5em;
         }
     }
+    &__input{
+        display: none;
+    }
+
+    
+    
 }
-
-.nav__container{
-    display: flex;
-    height: 100%;
-    width: 90%;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav__label, .nav__input{
-    display: none;
-}
-
-.nav__label-logo{
-    margin-top: 5em;
-}
-
-// media queries para menu hamburguesa
-
-
