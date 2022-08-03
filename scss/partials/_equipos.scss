@@ -22,11 +22,13 @@ main{
             width: 300px;
             height: 350px;
             margin: 75px 45px;
-            &:hover .back{
-                transform: perspective(600px) rotateY(360deg);
-            }
-            &:hover .front{
-                transform: perspective(600px) rotateY(180deg);
+            &:hover{
+                .front{
+                    transform: perspective(600px) rotateY(180deg);
+                }
+                .back{
+                    transform: perspective(600px) rotateY(360deg);
+                }
             }
             .face{
                 position: absolute;

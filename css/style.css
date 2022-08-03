@@ -9,6 +9,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
 .nav {
   width: 100%;
   background-image: url(../assets/nba-background.jpg);
@@ -56,8 +58,8 @@
 
 .footer {
   width: 100%;
-  background: #020024;
-  background: linear-gradient(90deg, #020024 0%, #af0505 50%, #020024 100%);
+  background-image: url(../assets/nba-background.jpg);
+  background-position-y: 35%;
   height: 100px;
   color: #fff; }
   .footer__container {
@@ -68,7 +70,7 @@
     margin: 15px 25px;
     line-height: 100px; }
   .footer a i {
-    color: white;
+    color: #8d150c;
     font-size: 2em;
     box-shadow: rgba(255, 254, 254, 0.25) 0px 25px 50px -12px;
     margin: 5px 20px; }
@@ -208,10 +210,10 @@ main .main__equipos {
     width: 300px;
     height: 350px;
     margin: 75px 45px; }
-    main .main__equipos .card:hover .back {
-      transform: perspective(600px) rotateY(360deg); }
     main .main__equipos .card:hover .front {
       transform: perspective(600px) rotateY(180deg); }
+    main .main__equipos .card:hover .back {
+      transform: perspective(600px) rotateY(360deg); }
     main .main__equipos .card .face {
       position: absolute;
       width: 100%;

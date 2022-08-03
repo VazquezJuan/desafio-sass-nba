@@ -1,8 +1,10 @@
 @import "../utilities/variables";
+@import "../utilities/maps";
+
 .footer{
     width: 100%;
-    background: rgb(2,0,36);
-    background: $bg__color;
+    background-image: url(../assets/nba-background.jpg);
+    background-position-y:35%;
     height: 100px;
     color: #fff;
     &__container{
@@ -15,7 +17,7 @@
     }
     a{
         i{
-        color: rgb(255, 255, 255);
+        color: map-get($map: $paleta, $key:'uno' );
         font-size: 2em;
         box-shadow: rgba(255, 254, 254, 0.25) 0px 25px 50px -12px;
         margin: 5px 20px;
