@@ -1,0 +1,17 @@
+@import "./utilities/tipografias";
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+$paleta:(
+    'uno': #8d150c,
+    'dos': #1e0cc0,
+    'tres':#6e6a6e,
+    'cuatro':#ecdde9,
+    'cinco': #f8a710,
+    'seis': #420132,
+    'siete':#e205bb,);
+
+$bg:(
+    'uno': transparent,
+    'dos': #420132,
+)

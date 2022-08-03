@@ -1,0 +1,15 @@
+@import "./scss/utilities/mixins";
+@import "./scss/utilities/tipografias";
+@import "./scss/utilities/variables";
+@import "./scss/utilities/maps";
+
+.box{
+    @include d-flex(center, flex-end, row);
+    background-color: map-get($map: $bg, $key:'dos' );
+    color: map-get($map: $paleta, $key:'cuatro' );
+    border: solid 2px $color;
+    margin: 3em 15px;
+    width: 200px;
+    height: 100px;
+    box-shadow: $boxShadow;
+}

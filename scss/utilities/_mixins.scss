@@ -1,0 +1,26 @@
+// Extends
+@import "./scss/utilities/variables";
+@import "utilities/tipografias";
+
+
+
+
+
+// Mixins
+@mixin texto($fontSize, $textStar, $color) {
+    font-size: $fontSize;
+    text-align: $textStar;
+    color: $color;
+    font-size: $fontMain;
+    padding: 10px 20px;
+    box-shadow: $boxShadow;
+}
+
+
+@mixin d-flex($justify, $align, $dire) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $dire;
+}
+
